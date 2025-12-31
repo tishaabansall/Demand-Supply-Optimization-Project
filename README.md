@@ -94,9 +94,6 @@ Returns JSON with driver reallocations for the chosen hour:
 
 ## Project Structure
 ```text
-# Project Structure
-
-UNTITLED (WORKSPACE)/
 ├── demand_supply/
 │   ├── analysis/
 │   │   ├── __init__.py
@@ -135,5 +132,6 @@ UNTITLED (WORKSPACE)/
 ---
 
 ## License
+
 
 This project is open-source and free to use.
