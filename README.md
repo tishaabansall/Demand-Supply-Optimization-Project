@@ -1,7 +1,7 @@
 
-## Urban Demand–Supply & Driver Allocation Optimization
+## Urban Demand–Supply & Resource Allocation Optimization
 
-A Python project to analyze demand patterns across zones and times, identifies high-demand **pain zones**, and simulates driver or delivery agent reallocations to optimize coverage. It integrates data analysis, ML-based demand forecasting, and optimization algorithms, making it ideal for ride-sharing, last-mile delivery, or any urban service requiring dynamic resource allocation.
+Urban Demand–Supply & Resource Allocation Optimization is a Python project designed to help platforms like ride-sharing services or e-commerce delivery companies efficiently manage urban operations. The project analyzes demand patterns across zones and times, identifies high-demand “pain zones,” and simulates resource reallocations to optimize coverage. It integrates data analysis, ML-based demand forecasting, and optimization algorithms, making it ideal for ride-sharing, last-mile delivery, or any urban service requiring dynamic resource allocation.
 
 ---
 
@@ -10,7 +10,7 @@ A Python project to analyze demand patterns across zones and times, identifies h
 - **Gap Analysis**: Identify zones and hours with demand–supply gaps.
 - **Pain Zones**: Rank zones with the highest shortage.
 - **Worst Hours**: Identify peak hours with highest demand gaps.
-- **Agent Optimization**: Suggest reallocation from surplus zones to deficit zones to reduce unmet demand.
+- **Resource Optimization**: Suggest reallocation from surplus zones to deficit zones to reduce unmet demand.
 - **Visualization**: Bar charts showing agent movements per hour for easy monitoring..
 - **FastAPI Backend**: Expose `/gap-analysis` and `/optimize` APIs for querying results.
 
@@ -75,7 +75,7 @@ Returns JSON containing:
 - pain_zones: zones with highest shortages
 - worst_hours: hours with highest demand gaps
 
-2. Optimized Agent Allocation
+2. Optimized Resource Allocation
 ```bash
 GET /optimize
 ```
@@ -137,3 +137,4 @@ UNTITLED (WORKSPACE)/
 ## License
 
 This project is open-source and free to use.
+
