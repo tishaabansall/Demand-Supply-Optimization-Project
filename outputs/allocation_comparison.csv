@@ -1,0 +1,13 @@
+zone,available_drivers,type,drivers
+Central,56.0,Before Optimization,
+North,90.0,Before Optimization,
+South,32.0,Before Optimization,
+East,78.0,Before Optimization,
+West,85.0,Before Optimization,
+Airport,59.0,Before Optimization,
+Central,,After Optimization,26.0
+North,,After Optimization,26.0
+South,,After Optimization,26.0
+East,,After Optimization,26.0
+West,,After Optimization,26.0
+Airport,,After Optimization,12.0
