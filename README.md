@@ -1,7 +1,7 @@
 
-## Demand–Supply Optimization Project
+## Urban Demand–Supply & Driver Allocation Optimization
 
-A Python project to analyze ride demand and optimize driver allocation across urban zones. Includes APIs to query demand gaps, pain zones, worst hours, and optimized driver movements, plus visualization of driver reallocations.
+A Python project to analyze demand patterns across zones and times, identifies high-demand **pain zones**, and simulates driver or delivery agent reallocations to optimize coverage. It integrates data analysis, ML-based demand forecasting, and optimization algorithms, making it ideal for ride-sharing, last-mile delivery, or any urban service requiring dynamic resource allocation.
 
 ---
 
@@ -10,8 +10,8 @@ A Python project to analyze ride demand and optimize driver allocation across ur
 - **Gap Analysis**: Identify zones and hours with demand–supply gaps.
 - **Pain Zones**: Rank zones with the highest shortage.
 - **Worst Hours**: Identify peak hours with highest demand gaps.
-- **Driver Optimization**: Simulate driver reallocation from surplus to deficit zones.
-- **Visualization**: Plot driver movements per hour using bar charts.
+- **Agent Optimization**: Suggest reallocation from surplus zones to deficit zones to reduce unmet demand.
+- **Visualization**: Bar charts showing agent movements per hour for easy monitoring..
 - **FastAPI Backend**: Expose `/gap-analysis` and `/optimize` APIs for querying results.
 
 ---
@@ -29,8 +29,8 @@ A Python project to analyze ride demand and optimize driver allocation across ur
 ## Installation
 1. Clone the repository:
 ```bash
-   git clone <your-repo-url>
-   cd <your-repo-folder>
+git clone <your-repo-url>
+cd <your-repo-folder>
 ```
 2.Install required libraries:
 ```bash
@@ -42,11 +42,11 @@ pip install pandas matplotlib
 
 1.Run the Python script:
 ```bash
-   python visualize_movement.py
+python visualize_movement.py
 ```
 2.The script will display all available hours:
 ```bash
-    Available hours:[0, 1, 2, ... , 23]
+Available hours:[0, 1, 2, ... , 23]
 ```
 3.Enter the hour you want to visualize (e.g., 15 for 3 PM)
 
@@ -75,7 +75,7 @@ Returns JSON containing:
 - pain_zones: zones with highest shortages
 - worst_hours: hours with highest demand gaps
 
-2. Optimized Driver Allocation
+2. Optimized Agent Allocation
 ```bash
 GET /optimize
 ```
@@ -94,6 +94,9 @@ Returns JSON with driver reallocations for the chosen hour:
 
 ## Project Structure
 ```text
+# Project Structure
+
+UNTITLED (WORKSPACE)/
 ├── demand_supply/
 │   ├── analysis/
 │   │   ├── __init__.py
@@ -132,6 +135,5 @@ Returns JSON with driver reallocations for the chosen hour:
 ---
 
 ## License
-
 
 This project is open-source and free to use.
