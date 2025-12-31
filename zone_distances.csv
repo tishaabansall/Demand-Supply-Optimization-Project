@@ -1,0 +1,7 @@
+,Central,North,South,East,West,Airport
+Central,0,5,13,8,8,12
+North,5,0,10,5,5,9
+South,13,10,0,5,11,11
+East,8,5,5,0,7,13
+West,8,5,11,7,0,11
+Airport,12,9,11,13,11,0
